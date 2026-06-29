@@ -18,7 +18,7 @@
     ],
     "priceFrom": 89800,
     "currency": "JPY",
-    "cabinType": "内側客室目安",
+    "cabinType": "MSCヨットクラブ候補",
     "flightIncluded": false,
     "escorted": false,
     "familyScore": "A",
@@ -27,7 +27,8 @@
     "tags": [
       "日本発着",
       "大型船",
-      "子連れ向き"
+      "子連れ向き",
+      "クラブルーム級"
     ],
     "notes": "MSCベリッシマは大型船で施設が多く、子連れ候補になりやすい。日程・寄港地・料金は公式で確認。",
     "bookingUrl": "https://www.cruiseplanet.co.jp/special/msc_bellissima.html",
@@ -40,9 +41,9 @@
     "sourceFinalUrl": "https://www.cruiseplanet.co.jp/special/msc_bellissima.html",
     "updateNote": "自動更新: 参照ページに到達できませんでした。URLまたは販売状況を確認。",
     "affiliateUrl": "",
-    "clubRoom": false,
-    "clubRoomLabel": "",
-    "clubRoomNote": ""
+    "clubRoom": true,
+    "clubRoomLabel": "MSCヨットクラブ",
+    "clubRoomNote": "MSC Yacht Clubをクラブルーム級として扱います。専用エリア・特典・対象客室は販売会社で確認してください。"
   },
   {
     "source": "阪急交通社",
@@ -157,7 +158,7 @@
     ],
     "priceFrom": 168000,
     "currency": "JPY",
-    "cabinType": "内側客室目安",
+    "cabinType": "スイート/リザーブ・コレクション級候補",
     "flightIncluded": false,
     "escorted": false,
     "familyScore": "A",
@@ -166,7 +167,8 @@
     "tags": [
       "日本発着",
       "大型船",
-      "バルコニーあり"
+      "バルコニーあり",
+      "クラブルーム級"
     ],
     "notes": "日本発着の定番大型船。客室在庫と子ども料金は販売会社で確認。",
     "bookingUrl": "https://www.best1cruise.com/user_data/tokusyu/princess2026.php",
@@ -179,9 +181,9 @@
     "sourceFinalUrl": "https://www.best1cruise.com/user_data/tokusyu/princess2026.php",
     "updateNote": "自動更新: 参照ページ到達確認済み。価格・空席・日程は予約ページで最終確認。",
     "affiliateUrl": "",
-    "clubRoom": false,
-    "clubRoomLabel": "",
-    "clubRoomNote": ""
+    "clubRoom": true,
+    "clubRoomLabel": "スイート/リザーブ・コレクション級",
+    "clubRoomNote": "プリンセスのスイート/Reserve Collection相当をクラブルーム級として扱います。対象客室・特典は販売会社で確認してください。"
   },
   {
     "source": "JTBクルーズ",
@@ -381,7 +383,7 @@
     ],
     "priceFrom": 120000,
     "currency": "JPY",
-    "cabinType": "内側客室目安/クルーズのみ",
+    "cabinType": "Royal Suite Class級候補/クルーズのみ",
     "flightIncluded": false,
     "escorted": false,
     "familyScore": "S",
@@ -390,7 +392,8 @@
     "tags": [
       "ファミリー",
       "大型船",
-      "クルーズのみ"
+      "クルーズのみ",
+      "クラブルーム級"
     ],
     "notes": "船内アクティビティが多い大型船候補。航空券と前後泊は別管理。",
     "bookingUrl": "https://www.best1cruise.com/B/RCI/",
@@ -403,9 +406,9 @@
     "sourceFinalUrl": "https://www.best1cruise.com/B/RCI/",
     "updateNote": "自動更新: 参照ページ到達確認済み。価格・空席・日程は予約ページで最終確認。",
     "affiliateUrl": "",
-    "clubRoom": false,
-    "clubRoomLabel": "",
-    "clubRoomNote": ""
+    "clubRoom": true,
+    "clubRoomLabel": "Royal Suite Class級",
+    "clubRoomNote": "ロイヤル・カリビアンのRoyal Suite Class/スイート特典対象をクラブルーム級として扱います。対象船・客室は販売会社で確認してください。"
   },
   {
     "source": "クルーズプラネット",
@@ -566,7 +569,7 @@
     ],
     "priceFrom": 180000,
     "currency": "JPY",
-    "cabinType": "内側客室目安",
+    "cabinType": "The Haven級候補",
     "flightIncluded": false,
     "escorted": false,
     "familyScore": "A",
@@ -575,7 +578,8 @@
     "tags": [
       "自由度高め",
       "大型船",
-      "アジア"
+      "アジア",
+      "クラブルーム級"
     ],
     "notes": "フリースタイル寄りで食事時間の自由度が高い候補。正確な発着地を確認。",
     "bookingUrl": "https://www.best1cruise.com/B/NCL/",
@@ -588,9 +592,9 @@
     "sourceFinalUrl": "https://www.best1cruise.com/B/NCL/",
     "updateNote": "自動更新: 参照ページ到達確認済み。価格・空席・日程は予約ページで最終確認。",
     "affiliateUrl": "",
-    "clubRoom": false,
-    "clubRoomLabel": "",
-    "clubRoomNote": ""
+    "clubRoom": true,
+    "clubRoomLabel": "The Haven級",
+    "clubRoomNote": "ノルウェージャンのThe Haven/上位スイート相当をクラブルーム級として扱います。対象船・客室は販売会社で確認してください。"
   },
   {
     "source": "クルーズプラネット",
