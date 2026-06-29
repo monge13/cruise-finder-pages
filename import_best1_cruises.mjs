@@ -154,9 +154,11 @@ function regionFor(rawRegion, text) {
   if (/カリブ|バハマ|フォート.?ローダデール|マイアミ|ポートカナベラル/.test(value)) return "カリブ海";
   if (/アジア|シンガポール|台湾|基隆|香港|釜山|済州|上海/.test(value)) return "アジア";
   if (/ハワイ|ホノルル/.test(value)) return "ハワイ";
-  if (/北欧|バルト|フィヨルド/.test(value)) return "北欧";
+  if (/北欧|バルト|フィヨルド|イギリス|英国|アイスランド|グリーンランド|サウサンプトン|コペンハーゲン|ハンブルグ|レイキャビク/.test(value)) return "北欧";
+  if (/カナダ|ニューイングランド|ニューヨーク|ボストン|ノーフォーク|ボルチモア/.test(value)) return "北米";
+  if (/リバークルーズ|ライン川|ドナウ川|セーヌ川/.test(value)) return "リバークルーズ";
   if (/南極|オセアニア|オーストラリア|ニュージーランド/.test(value)) return "オセアニア";
-  return rawRegion || "その他";
+  return "その他";
 }
 
 function portFromText(rawPort, title) {
@@ -191,10 +193,10 @@ function departurePartFromParts(parts, title) {
 
 function regionPartFromParts(parts, title) {
   const candidate = parts.slice(3, 10).find(part =>
-    /地中海|エーゲ|カリブ|アラスカ|日本|アジア|北欧|ハワイ|バハマ|東海岸|西海岸|リバークルーズ|オセアニア/.test(part) &&
+    /地中海|エーゲ|カリブ|アラスカ|日本|アジア|北欧|ハワイ|バハマ|東海岸|西海岸|リバークルーズ|オセアニア|イギリス|英国|カナダ|ニューイングランド|アイスランド|グリーンランド/.test(part) &&
     !/発[（(]/.test(part)
   );
-  return candidate || title;
+  return candidate || String(title).match(/行く\s+(.+?)クルーズ/)?.[1] || "";
 }
 
 function priceFromRow(row) {
