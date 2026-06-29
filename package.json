@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node build_cruise_finder.mjs",
+    "import:best1": "node import_best1_cruises.mjs",
     "update": "node update_cruises.mjs",
     "affiliate": "node apply_affiliate_links.mjs"
   }

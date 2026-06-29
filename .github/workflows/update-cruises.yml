@@ -22,6 +22,7 @@ jobs:
 
       - name: Update all cruise listings
         run: |
+          npm run import:best1
           npm run update
           npm run affiliate
 

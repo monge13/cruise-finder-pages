@@ -89,7 +89,8 @@ async function updateHtmlData(rows) {
 }
 
 const cruises = JSON.parse(await fs.readFile(jsonPath, "utf8"));
-const uniqueUrls = [...new Set(cruises.flatMap(row => [row.sourceUrl, row.bookingUrl]).filter(Boolean))];
+const rowsNeedingUrlCheck = cruises.filter(row => !row.importedFromApi);
+const uniqueUrls = [...new Set(rowsNeedingUrlCheck.flatMap(row => [row.sourceUrl, row.bookingUrl]).filter(Boolean))];
 const snapshots = new Map();
 
 for (const url of uniqueUrls) {
@@ -98,6 +99,15 @@ for (const url of uniqueUrls) {
 }
 
 const updatedCruises = cruises.map(row => {
+  if (row.importedFromApi) {
+    return {
+      ...row,
+      lastChecked: row.lastChecked || today,
+      sourceReachable: row.sourceReachable ?? true,
+      sourceHttpStatus: row.sourceHttpStatus ?? 200,
+      updateNote: row.updateNote || "自動取得: 一覧APIから取得。価格・空席・日程は予約ページで最終確認。"
+    };
+  }
   const sourceSnapshot = snapshots.get(row.sourceUrl) ?? snapshots.get(row.bookingUrl);
   const bookingSnapshot = snapshots.get(row.bookingUrl) ?? sourceSnapshot;
   const reachable = Boolean(sourceSnapshot?.reachable || bookingSnapshot?.reachable);
