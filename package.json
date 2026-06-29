@@ -1,0 +1,10 @@
+{
+  "name": "cruise-finder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build_cruise_finder.mjs",
+    "update": "node update_cruises.mjs"
+  }
+}
