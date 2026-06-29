@@ -94,9 +94,9 @@ function toAffiliateCsv(existingRows, cruises) {
 
 async function updateHtmlData(rows) {
   const html = await fs.readFile(htmlPath, "utf8");
-  const pattern = /let DATA = .*?;\n    const \$ =/s;
+  const pattern = /let DATA = .*?;\n    (?:let renderLimit = 200;\n    )?const \$ =/s;
   if (!pattern.test(html)) throw new Error("Could not find embedded DATA in index.html");
-  const replacement = `let DATA = ${JSON.stringify(rows).replaceAll("</script", "<\\/script")};\n    const $ =`;
+  const replacement = `let DATA = ${JSON.stringify(rows).replaceAll("</script", "<\\/script")};\n    let renderLimit = 200;\n    const $ =`;
   await fs.writeFile(htmlPath, html.replace(pattern, replacement), "utf8");
 }
 
