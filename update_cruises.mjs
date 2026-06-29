@@ -69,7 +69,7 @@ function toCsv(rows) {
     "source", "title", "ship", "cruiseLine", "region", "departurePort", "arrivalPort",
     "departureDate", "nights", "itinerary", "priceFrom", "currency", "cabinType",
     "flightIncluded", "escorted", "familyScore", "luxuryTier", "status", "tags",
-    "notes", "bookingUrl", "sourceUrl", "lastChecked", "autoUpdatedAt",
+    "notes", "bookingUrl", "affiliateUrl", "sourceUrl", "lastChecked", "autoUpdatedAt",
     "sourceReachable", "sourceHttpStatus", "sourcePageTitle", "sourceFinalUrl",
     "updateNote"
   ];
@@ -78,11 +78,12 @@ function toCsv(rows) {
 
 async function updateHtmlData(rows) {
   const html = await fs.readFile(htmlPath, "utf8");
-  const replacement = `let DATA = ${JSON.stringify(rows).replaceAll("</script", "<\\/script")};\n    const $ =`;
-  const updated = html.replace(/let DATA = .*?;\n    const \$ =/s, replacement);
-  if (updated === html) {
-    throw new Error("Could not replace embedded DATA in index.html");
+  const pattern = /let DATA = .*?;\n    const \$ =/s;
+  if (!pattern.test(html)) {
+    throw new Error("Could not find embedded DATA in index.html");
   }
+  const replacement = `let DATA = ${JSON.stringify(rows).replaceAll("</script", "<\\/script")};\n    const $ =`;
+  const updated = html.replace(pattern, replacement);
   await fs.writeFile(htmlPath, updated, "utf8");
 }
 
