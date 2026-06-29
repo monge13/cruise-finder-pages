@@ -39,7 +39,10 @@
     "sourcePageTitle": "403 Forbidden",
     "sourceFinalUrl": "https://www.cruiseplanet.co.jp/special/msc_bellissima.html",
     "updateNote": "自動更新: 参照ページに到達できませんでした。URLまたは販売状況を確認。",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "clubRoom": false,
+    "clubRoomLabel": "",
+    "clubRoomNote": ""
   },
   {
     "source": "阪急交通社",
@@ -70,7 +73,8 @@
     "tags": [
       "日本船",
       "高級",
-      "添乗員同行候補"
+      "添乗員同行候補",
+      "クラブルーム級"
     ],
     "notes": "日本船の高級クルーズ候補。子連れ可否・年齢条件・客室条件を要確認。",
     "bookingUrl": "https://www.hankyu-travel.com/cruise/ship-d/asukaiii.php",
@@ -82,48 +86,56 @@
     "sourcePageTitle": "飛鳥III｜クルーズ旅行・ツアー特集｜阪急交通社",
     "sourceFinalUrl": "https://www.hankyu-travel.com/cruise/ship-d/asukaiii.php",
     "updateNote": "自動更新: 参照ページ到達確認済み。価格・空席・日程は予約ページで最終確認。",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "clubRoom": true,
+    "clubRoomLabel": "飛鳥スイート以上",
+    "clubRoomNote": "飛鳥スイート以上をクラブルーム級として絞り込み対象にしています。正確な客室名・特典は販売会社で確認してください。"
   },
   {
-    "source": "クラブツーリズム",
-    "title": "にっぽん丸 季節の国内クルーズ",
-    "ship": "にっぽん丸",
-    "cruiseLine": "商船三井クルーズ",
+    "source": "クルーズプラネット",
+    "title": "MITSUI OCEAN FUJI 三六スイート候補",
+    "ship": "MITSUI OCEAN FUJI",
+    "cruiseLine": "MITSUI OCEAN CRUISES",
     "region": "日本発着",
-    "departurePort": "東京",
-    "arrivalPort": "東京",
+    "departurePort": "横浜",
+    "arrivalPort": "横浜",
     "departureDate": "2026-11-08",
-    "nights": 4,
+    "nights": 5,
     "itinerary": [
-      "東京",
+      "横浜",
       "終日航海",
-      "瀬戸内/九州方面",
-      "東京"
+      "国内/近海方面",
+      "終日航海",
+      "横浜"
     ],
-    "priceFrom": 260000,
+    "priceFrom": 520000,
     "currency": "JPY",
-    "cabinType": "海側客室目安",
+    "cabinType": "全室スイート/三六スイート候補",
     "flightIncluded": false,
     "escorted": true,
     "familyScore": "B",
     "luxuryTier": "高級",
-    "status": "販売終了/要差替え",
+    "status": "要公式確認",
     "tags": [
       "日本船",
-      "国内",
-      "食事重視"
+      "高級",
+      "全室スイート",
+      "クラブルーム級"
     ],
-    "notes": "にっぽん丸は2026年5月に引退済み。代替の日本船候補へ差し替え推奨。",
-    "bookingUrl": "https://www.club-t.com/sp/special/japan/nipponmaru/",
-    "sourceUrl": "https://www.club-t.com/sp/special/japan/nipponmaru/",
+    "notes": "三井オーシャンフジは全客室スイートを基本とするラグジュアリー船。三六スイートなど上位客室候補を要確認。",
+    "bookingUrl": "https://www.cruiseplanet.co.jp/special/mitsui_oceanfuji.html",
+    "sourceUrl": "https://www.mitsuioceancruises.com/fuji/",
     "lastChecked": "2026-06-29",
     "autoUpdatedAt": "2026-06-29T08:13:01.740Z",
-    "sourceReachable": true,
-    "sourceHttpStatus": 200,
-    "sourcePageTitle": "にっぽん丸（日本丸）クルーズツアー・旅行│クラブツーリズム",
-    "sourceFinalUrl": "https://www.club-t.com/sp/special/japan/nipponmaru/",
-    "updateNote": "自動更新: 参照ページ到達確認済み。価格・空席・日程は予約ページで最終確認。",
-    "affiliateUrl": ""
+    "sourceReachable": null,
+    "sourceHttpStatus": null,
+    "sourcePageTitle": "",
+    "sourceFinalUrl": "https://www.mitsuioceancruises.com/fuji/",
+    "updateNote": "客室分類: 三六スイートをクラブルーム級として扱います。料金・空席・対象客室は販売会社で確認。",
+    "affiliateUrl": "",
+    "clubRoom": true,
+    "clubRoomLabel": "三六スイート以上",
+    "clubRoomNote": "三井オーシャンフジの三六スイート以上をクラブルーム級として絞り込み対象にしています。正確な客室名・特典は販売会社で確認してください。"
   },
   {
     "source": "ベストワンクルーズ",
@@ -166,7 +178,10 @@
     "sourcePageTitle": "ダイヤモンド・プリンセス2025年・2026年日本発着クルーズ特集 | ベストワンクルーズ",
     "sourceFinalUrl": "https://www.best1cruise.com/user_data/tokusyu/princess2026.php",
     "updateNote": "自動更新: 参照ページ到達確認済み。価格・空席・日程は予約ページで最終確認。",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "clubRoom": false,
+    "clubRoomLabel": "",
+    "clubRoomNote": ""
   },
   {
     "source": "JTBクルーズ",
@@ -194,7 +209,8 @@
     "tags": [
       "ショート",
       "日本船",
-      "週末"
+      "週末",
+      "クラブルーム級"
     ],
     "notes": "クルーズ初体験向き。子連れ設備は少なめの可能性があるので要確認。",
     "bookingUrl": "https://www.jtb.co.jp/cruise/_common/tour_search_result/",
@@ -206,7 +222,10 @@
     "sourcePageTitle": "ツアー検索 結果｜クルーズ旅行ならJTB",
     "sourceFinalUrl": "https://www.jtb.co.jp/cruise/_common/tour_search_result/",
     "updateNote": "自動更新: 参照ページ到達確認済み。価格・空席・日程は予約ページで最終確認。",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "clubRoom": true,
+    "clubRoomLabel": "飛鳥スイート以上",
+    "clubRoomNote": "飛鳥スイート以上をクラブルーム級として絞り込み対象にしています。正確な客室名・特典は販売会社で確認してください。"
   },
   {
     "source": "クルーズプラネット",
@@ -247,7 +266,10 @@
     "sourcePageTitle": "403 Forbidden",
     "sourceFinalUrl": "https://www.cruiseplanet.co.jp/special?id=56",
     "updateNote": "自動更新: 参照ページに到達できませんでした。URLまたは販売状況を確認。",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "clubRoom": false,
+    "clubRoomLabel": "",
+    "clubRoomNote": ""
   },
   {
     "source": "阪急交通社",
@@ -290,7 +312,10 @@
     "sourcePageTitle": "地中海・エーゲ海クルーズのおすすめ旅行・ツアー｜阪急交通社",
     "sourceFinalUrl": "https://www.hankyu-travel.com/cruise/mediterranean/",
     "updateNote": "自動更新: 参照ページ到達確認済み。価格・空席・日程は予約ページで最終確認。",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "clubRoom": false,
+    "clubRoomLabel": "",
+    "clubRoomNote": ""
   },
   {
     "source": "クラブツーリズム",
@@ -333,7 +358,10 @@
     "sourcePageTitle": "アラスカクルーズ旅行・ツアー│クラブツーリズム",
     "sourceFinalUrl": "https://www.club-t.com/sp/special/abroad/alaska/cruise/",
     "updateNote": "自動更新: 参照ページ到達確認済み。価格・空席・日程は予約ページで最終確認。",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "clubRoom": false,
+    "clubRoomLabel": "",
+    "clubRoomNote": ""
   },
   {
     "source": "ベストワンクルーズ",
@@ -374,7 +402,10 @@
     "sourcePageTitle": "ロイヤルカリビアンクルーズ人気の客船＆料金比較｜ベストワンクルーズ",
     "sourceFinalUrl": "https://www.best1cruise.com/B/RCI/",
     "updateNote": "自動更新: 参照ページ到達確認済み。価格・空席・日程は予約ページで最終確認。",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "clubRoom": false,
+    "clubRoomLabel": "",
+    "clubRoomNote": ""
   },
   {
     "source": "クルーズプラネット",
@@ -404,7 +435,8 @@
     "tags": [
       "子連れ最強候補",
       "ディズニー",
-      "航空券確認"
+      "航空券確認",
+      "クラブルーム級"
     ],
     "notes": "子連れ体験は強いが高額。航空券・前後泊・年齢別キッズクラブ条件を確認。",
     "bookingUrl": "https://www.cruiseplanet.co.jp/special/special_disneycruise.html",
@@ -416,7 +448,10 @@
     "sourcePageTitle": "403 Forbidden",
     "sourceFinalUrl": "https://www.cruiseplanet.co.jp/special/special_disneycruise.html",
     "updateNote": "自動更新: 参照ページに到達できませんでした。URLまたは販売状況を確認。",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "clubRoom": true,
+    "clubRoomLabel": "コンシェルジュ/スイート級",
+    "clubRoomNote": "コンシェルジュ/スイート級をクラブルーム級として絞り込み対象にしています。正確な客室名・特典は販売会社で確認してください。"
   },
   {
     "source": "阪急交通社",
@@ -459,7 +494,10 @@
     "sourcePageTitle": "地中海・エーゲ海クルーズのおすすめ旅行・ツアー｜阪急交通社",
     "sourceFinalUrl": "https://www.hankyu-travel.com/cruise/mediterranean/",
     "updateNote": "自動更新: 参照ページ到達確認済み。価格・空席・日程は予約ページで最終確認。",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "clubRoom": false,
+    "clubRoomLabel": "",
+    "clubRoomNote": ""
   },
   {
     "source": "JTBクルーズ",
@@ -490,7 +528,8 @@
     "tags": [
       "英国船",
       "日本発着",
-      "フォーマル"
+      "フォーマル",
+      "クラブルーム級"
     ],
     "notes": "大人向け色が強い船。子連れの場合はドレスコードとキッズ施設を確認。",
     "bookingUrl": "https://www.jtb.co.jp/cruise/cunardline/",
@@ -502,7 +541,10 @@
     "sourcePageTitle": "キュナード・ライン｜クルーズ旅行ならJTB",
     "sourceFinalUrl": "https://www.jtb.co.jp/cruise/cunardline/",
     "updateNote": "自動更新: 参照ページ到達確認済み。価格・空席・日程は予約ページで最終確認。",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "clubRoom": true,
+    "clubRoomLabel": "プリンセス/クイーンズ・グリル級",
+    "clubRoomNote": "プリンセス/クイーンズ・グリル級をクラブルーム級として絞り込み対象にしています。正確な客室名・特典は販売会社で確認してください。"
   },
   {
     "source": "ベストワンクルーズ",
@@ -545,7 +587,10 @@
     "sourcePageTitle": "ノルウェージャンクルーズ人気の客船＆料金比較｜ベストワンクルーズ",
     "sourceFinalUrl": "https://www.best1cruise.com/B/NCL/",
     "updateNote": "自動更新: 参照ページ到達確認済み。価格・空席・日程は予約ページで最終確認。",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "clubRoom": false,
+    "clubRoomLabel": "",
+    "clubRoomNote": ""
   },
   {
     "source": "クルーズプラネット",
@@ -575,7 +620,8 @@
     "tags": [
       "リバー",
       "大人向け",
-      "添乗員同行"
+      "添乗員同行",
+      "クラブルーム級"
     ],
     "notes": "乳幼児向けではない可能性が高い。年齢条件を最優先で確認。",
     "bookingUrl": "https://www.cruiseplanet.co.jp/area?area=river_cruise",
@@ -587,6 +633,9 @@
     "sourcePageTitle": "403 Forbidden",
     "sourceFinalUrl": "https://www.cruiseplanet.co.jp/area?area=river_cruise",
     "updateNote": "自動更新: 参照ページに到達できませんでした。URLまたは販売状況を確認。",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "clubRoom": true,
+    "clubRoomLabel": "スイート/上位客室候補",
+    "clubRoomNote": "スイート/上位客室候補をクラブルーム級として絞り込み対象にしています。正確な客室名・特典は販売会社で確認してください。"
   }
 ]

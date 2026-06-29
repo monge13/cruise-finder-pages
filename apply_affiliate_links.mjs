@@ -48,7 +48,8 @@ function toCsv(rows) {
   const headers = [
     "source", "title", "ship", "cruiseLine", "region", "departurePort", "arrivalPort",
     "departureDate", "nights", "itinerary", "priceFrom", "currency", "cabinType",
-    "flightIncluded", "escorted", "familyScore", "luxuryTier", "status", "tags",
+    "flightIncluded", "escorted", "familyScore", "luxuryTier",
+    "clubRoom", "clubRoomLabel", "clubRoomNote", "status", "tags",
     "notes", "bookingUrl", "affiliateUrl", "sourceUrl", "lastChecked", "autoUpdatedAt",
     "sourceReachable", "sourceHttpStatus", "sourcePageTitle", "sourceFinalUrl",
     "updateNote"
