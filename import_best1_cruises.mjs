@@ -326,7 +326,7 @@ for (let page = 1; page <= maxPages; page++) {
     if (seen.has(row.product_id)) continue;
     seen.add(row.product_id);
     const mapped = mapBest1Row(row);
-    if (!mapped.departureDate || !mapped.nights || !mapped.bookingUrl) continue;
+    if (!mapped.departureDate || !mapped.nights || !mapped.bookingUrl || Number(mapped.priceFrom || 0) <= 0) continue;
     mapped.affiliateUrl = existingAffiliateByUrl.get(mapped.bookingUrl) || existingAffiliateByTitle.get(mapped.title) || "";
     imported.push(mapped);
     added++;
