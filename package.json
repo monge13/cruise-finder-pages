@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "import:best1": "node import_best1_cruises.mjs",
-    "import:bute": "node import_bute_cruises.mjs",
+    "import:partners": "node import_partner_cruises.mjs",
     "update": "node update_cruises.mjs",
     "affiliate": "node apply_affiliate_links.mjs"
   }
