@@ -120,6 +120,10 @@ function durationFromText(text) {
   return match ? Number(match[1]) : null;
 }
 
+function durationFromParts(parts, title) {
+  return durationFromText(parts.find(part => /\d+泊\d+日/.test(part)) || title) ?? 0;
+}
+
 function splitComment(row) {
   return String(row.comment3 || "").split(",").map(part => part.trim()).filter(Boolean);
 }
@@ -175,9 +179,10 @@ function shipFromTitle(title, fallback) {
 }
 
 function cruiseLineFromParts(parts, ship, fullText) {
-  const candidates = parts.slice(3, 9).filter(part =>
+  const candidates = parts.slice(1, 9).filter(part =>
     part &&
     part !== ship &&
+    !/クルーズのみ|航空券|添乗員/.test(part) &&
     !/発[（(]/.test(part) &&
     !/客船/.test(part) &&
     !/地中海|エーゲ|カリブ|アラスカ|日本|アジア|北欧|ハワイ|バハマ|東海岸|西海岸|リバークルーズ/.test(part)
@@ -245,7 +250,7 @@ function dedupeByShipAndDate(rows) {
 function mapBest1Row(row) {
   const parts = splitComment(row);
   const title = titleWithoutOnlineMark(row.name || parts[0]);
-  const nights = durationFromText(parts[2] || row.name) ?? 0;
+  const nights = durationFromParts(parts, row.name);
   const ship = shipFromTitle(row.name || parts[0], parts[4]);
   const cruiseLine = cruiseLineFromParts(parts, ship, `${row.name} ${row.comment3}`);
   const rawPort = departurePartFromParts(parts, row.name) || row.sub_large_image6 || "";

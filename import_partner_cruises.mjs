@@ -279,7 +279,7 @@ function parseButeDetail(url, html) {
   const ship = titleShip || ports?.[3] || "要確認";
   const days = Number(title.match(/(\d+)日間/)?.[1] || text.match(/(\d+)日間/)?.[1] || 0);
   if (!title || !departureDate || !priceFrom || !days || ship === "要確認") return null;
-  const cruiseLine = cruiseLineFor(ship, text);
+  const cruiseLine = cruiseLineFor(ship, title);
   const itinerary = [...new Set([...text.matchAll(/\d{1,2}:\d{2}\s*([^\s（）()]+)(?:[\/／][^\s（）()]+)?/g)].map(match => portName(match[1])))].slice(0, 10);
   return commonRow({
     source: "BUTE",
