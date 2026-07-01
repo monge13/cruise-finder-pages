@@ -6,6 +6,7 @@
   "scripts": {
     "import:best1": "node import_best1_cruises.mjs",
     "import:partners": "node import_partner_cruises.mjs",
+    "refresh": "npm run import:best1 && npm run import:partners && npm run update && npm run affiliate",
     "update": "node update_cruises.mjs",
     "affiliate": "node apply_affiliate_links.mjs"
   }
